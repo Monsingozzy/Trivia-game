@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +40,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+.button_ans {
+  background-color: #4caf50; /* Green */
+  margin: 15px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+.result {
+  color: rgb(177, 90, 218);
+  text-align: center;
+  border-bottom: 2px solid aqua;
+  display: inline;
+}
+
+input {
+  border: 3px solid #555;
+  height: 10vh;
+  font-size: 20px;
 }
