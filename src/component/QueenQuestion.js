@@ -5,7 +5,7 @@ import "../App.css";
 export const QueenQuestion = () => {
   const [posts, setPosts] = useState({});
   const [ans, setans] = useState("");
-  const [result, setresult] = useState("Your Result Apper here");
+  const [result, setresult] = useState("Your Result Appear here");
 
   useEffect(() => {
     axios.get("https://jservice.io/api/random").then((response) => {
@@ -27,7 +27,7 @@ export const QueenQuestion = () => {
     } else if (simple === ans) {
       setresult((e) => (e = "Right Answer"));
     } else {
-      setresult((e) => (e = "wrong Answer"));
+      setresult((e) => (e = "Wrong Answer"));
     }
   };
   const nextQ = () => {
@@ -39,7 +39,7 @@ export const QueenQuestion = () => {
       <h3> Question </h3>
       <h1>{posts.question}</h1>
       <h3>Enter your Answer</h3>
-      <input type="text" onChange={checkingAns} value={ans}></input>
+      <input type="text" required onChange={checkingAns} value={ans}></input>
       <div>
         <button className="button_ans" onClick={validating}>
           Submit Answer
